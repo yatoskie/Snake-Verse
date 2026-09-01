@@ -583,9 +583,9 @@
     if (goldenFood && now >= goldenExpireAt){
       goldenFood = null;
     }
-    if (!goldenFood && !ateGolden && Math.random() < 0.012){
+    if (!goldenFood && !ateGolden && Math.random() < 0.045){
       goldenFood = spawnGoldenFood();
-      goldenExpireAt = now + 3000;
+      goldenExpireAt = now + 2500;
     }
     lastTick = now;
   }
