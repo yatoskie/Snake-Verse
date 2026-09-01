@@ -583,7 +583,7 @@
     if (goldenFood && now >= goldenExpireAt){
       goldenFood = null;
     }
-    if (!goldenFood && !ateGolden && Math.random() < 0.012){
+    if (!goldenFood && !ateGolden && Math.random() < 0.010){
       goldenFood = spawnGoldenFood();
       goldenExpireAt = now + 2500;
     }
