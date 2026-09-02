@@ -495,7 +495,7 @@
   }
 
   function speedForScore(){
-    return Math.max(55, 110 - score * 2.5);
+    return Math.max(50, 150 - score * 5);
   }
 
   function initGame(){
@@ -506,7 +506,7 @@
     dir = {x:1,y:0};
     nextDir = {x:1,y:0};
     score = 0;
-    moveInterval = 110;
+    moveInterval = 150;
     lastTick = performance.now();
     dead = false;
     paused = false;
